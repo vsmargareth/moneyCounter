@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3d9d3;
+  text-align: center;
+}
+
+header select {
+  padding: 5px;
+  margin: 10px;
+  background-color: #e2f170;
+  border: none;
+}
+
+main {
+  background-color: #72f672;
+  width: 50%;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper input {
+  border: none;
+  background-color: #72f672;
+  width: 50px;
+  text-align: center;
+}
+.wrapper input :focus {
+  border-bottom: 1px solid black;
+  list-style: none;
+}
+
+label {
+  display: flex;
+  gap: 10px;
+}
+
+.division {
+  border-bottom: 3px solid black;
+  width: 90%;
+  height: 15px;
+  display: flex;
+  margin: auto;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

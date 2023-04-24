@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="main.css">
+  <script src="./main.js" defer></script>
+  <title>Money Counter</title>
+</head>
+
+<body>
+  <header>
+    <h1>Money Counter</h1>
+    <select name="countryMoney" id="country">
+      <option value="euro">Euro EUR (€)</option>
+      <option value="dolar">Dolar ($)</option>
+      <option value="yuan">Yuan (¥)</option>
+    </select>
+  </header>
+  <main>
+
+    <div class="wrapper" data-money="0.01">
+      <label for="oneCent">0,01 <span>€</span> <span>x</span> </label>
+      <input type="text" id="oneCent">
+      <p id="oneCentTotal"> = 0</p>
+      <p>€</p>
+
+    </div>
+    <div class="wrapper" data-money="0.02">
+      <label for="twoCents">0,02 <span>€</span> <span>x</span> </label>
+      <input type="text" id="twoCents">
+      <p id="twoCentsTotal">= 0</p>
+      <p>€</p>
+
+    </div>
+    <div class="wrapper" data-money="0.05">
+      <label for="fiveCents">0,05 <span>€</span> <span>x</span> </label>
+      <input type="text" id="fiveCents">
+      <p id="fiveCentsTotal">= 0</p>
+      <p>€</p>
+
+    </div>
+    <div class="wrapper" data-money="0.20">
+      <label for="twentyCents">0,20 <span>€</span> <span>x</span> </label>
+      <input type="text" id="twentyCents">
+      <p id="twentyCentsTotal">= 0</p>
+      <p>€</p>
+
+    </div>
+    <div class="wrapper" data-money="0.50">
+      <label for="fiftyCents">0,50 <span>€</span> <span>x</span> </label>
+      <input type="text" id="fiftyCents">
+      <p id="fiftyCentsTotal">= 0</p>
+      <p>€</p>
+
+    </div>
+    <div class="wrapper" data-money="1">
+      <label for="oneEuro">1,00 <span>€</span> <span>x</span> </label>
+      <input type="text" id="oneEuro">
+      <p id="oneEuroTotal">= 0</p>
+      <p>€</p>
+
+    </div>
+    <div class="wrapper" data-money="2">
+      <label for="twoEuros">2,00 <span>€</span> <span>x</span> </label>
+      <input type="text" id="twoEuros">
+
+      <p id="twoEurosTotal">= 0</p>
+      <p>€</p>
+    </div>
+    </div>
+    <div class="wrapper" data-money="5">
+      <label for="fiveEuros">5,00 <span>€</span> <span>x</span> </label>
+      <input type="text" id="fiveEuros">
+
+      <p id="fiveEurosTotal">= 0</p>
+      <p>€</p>
+    </div>
+    </div>
+    <div class="wrapper" data-money="10">
+      <label for="tenEuros">10,00 <span>€</span> <span>x</span> </label>
+      <input type="text" id="tenEuros">
+      <p id="tenEurosTotal">= 0</p>
+      <p>€</p>
+    </div>
+
+    <div class="wrapper" data-money="50">
+      <label for="fiftyEuros">50,00 <span>€</span> <span>x</span> </label>
+      <input type="text" id="fiftyEuros">
+      <p id="fiftyEurosTotal">= 0</p>
+      <p>€</p>
+    </div>
+
+    <div class="wrapper" data-money="100">
+      <label for="hundredEuros">100,00 <span>€</span> <span>x</span> </label>
+      <input type="text" id="hundredEuros">
+      <p id="hundredEurosTotal">= 0</p>
+      <p>€</p>
+    </div>
+    <div class="division"></div>
+    <div class="total">
+      <h3>Total</h3>
+      <h3>500 <span>€</span></h3>
+    </div>
+
+
+  </main>
+</body>
+
+</html>
