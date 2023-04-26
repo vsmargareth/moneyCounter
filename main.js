@@ -43,11 +43,9 @@ let resultRef = document.querySelector('#result')
 //5- Soma o total
 function sum() {
   let total = 0;
-  let parcial = 0
 
   for (let sumTotal of wrapperRef) {
-    let teste = 0
-    let turnNumber = Number(sumTotal.childNodes[6].innerHTML)
+    let turnNumber = Number(sumTotal.childNodes[7].innerHTML)
 
     total = total + turnNumber
 
@@ -58,7 +56,7 @@ function sum() {
 //4- Imprime na tela o resulatado parcial
 function printMutiplication(numberMultiplication, wherePrint) {
 
-  wherePrint.innerHTML = `${numberMultiplication.toFixed(3)}`
+  wherePrint.innerHTML = `${numberMultiplication.toFixed(2)}`
 
 }
 
@@ -66,8 +64,6 @@ function printMutiplication(numberMultiplication, wherePrint) {
 function multiplication(money, howMany, where) {
   let multiplication = money * howMany
   printMutiplication(multiplication, where)
-  // console.log(oneCentTotalRef.innerHTML)
-
 }
 
 //2- ler os inputs
@@ -75,8 +71,7 @@ function readInput() {
   wrapperRef.forEach(function (div) {
     let money = div.dataset.money
     let howMany = div.childNodes[3].value
-    let where = div.childNodes[6]
-    console.log(where)
+    let where = div.childNodes[7]
 
     multiplication(money, howMany, where)
   })

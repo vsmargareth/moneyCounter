@@ -4,16 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #d3d9d3;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 header {
 
   select {
-    padding: 5px;
-    margin: 10px;
+    padding: .5rem;
+    margin: 1rem;
     background-color: #e2f170;
     border: none;
   }
@@ -21,21 +26,22 @@ header {
 
 main {
   background-color: #72f672;
-  width: 50%;
+  width: min(38rem, 80%);
   margin: auto;
+  border-radius: 1rem;
 }
 
 .wrapper {
   display: flex;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
   justify-content: space-around;
   align-items: center;
 
   input {
     border: none;
     background-color: #72f672;
-    width: 50px;
+    width: 5rem;
     text-align: center;
 
     :focus {
@@ -47,13 +53,13 @@ main {
 
 label {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .division {
-  border-bottom: 3px solid black;
+  border-bottom: .3rem solid black;
   width: 90%;
-  height: 15px;
+  height: 1.5rem;
   display: flex;
   margin: auto;
 }
@@ -61,5 +67,5 @@ label {
 .total {
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 1rem;
 }
