@@ -21,6 +21,7 @@ let fiftyEurosInputRef = document.querySelector('#fiftyEuros')
 let fiftyEurosTotalRef = document.querySelector('#tenEufiftyEuros')
 let hundredEurosInputRef = document.querySelector('#hundredEuros')
 let hundredEurosTotalRef = document.querySelector('#hundredEurosTotal')
+let resultRef = document.querySelector('#result')
 
 
 
@@ -39,11 +40,25 @@ let hundredEurosTotalRef = document.querySelector('#hundredEurosTotal')
 //   console.log(capture.dataset.money)
 // })
 
+//5- Soma o total
+function sum() {
+  let total = 0;
+  let parcial = 0
 
-function printMutiplication(number, wherePrint) {
+  for (let sumTotal of wrapperRef) {
+    let teste = 0
+    let turnNumber = Number(sumTotal.childNodes[6].innerHTML)
 
-  wherePrint.innerHTML = `=  ${number}`
+    total = total + turnNumber
 
+  }
+  resultRef.innerHTML = total.toFixed(2)
+}
+
+//4- Imprime na tela o resulatado parcial
+function printMutiplication(numberMultiplication, wherePrint) {
+
+  wherePrint.innerHTML = `${numberMultiplication.toFixed(3)}`
 
 }
 
@@ -51,6 +66,7 @@ function printMutiplication(number, wherePrint) {
 function multiplication(money, howMany, where) {
   let multiplication = money * howMany
   printMutiplication(multiplication, where)
+  // console.log(oneCentTotalRef.innerHTML)
 
 }
 
@@ -59,7 +75,7 @@ function readInput() {
   wrapperRef.forEach(function (div) {
     let money = div.dataset.money
     let howMany = div.childNodes[3].value
-    let where = div.childNodes[5]
+    let where = div.childNodes[6]
     console.log(where)
 
     multiplication(money, howMany, where)
@@ -69,6 +85,7 @@ function readInput() {
 //começa aqui: 'escutando' as teclas
 wrapperRef.forEach(function (array) {
   array.addEventListener('keyup', readInput)
+  array.addEventListener('keyup', sum)
 })
 
 //mapeando o wrapper map
